@@ -1,0 +1,35 @@
+.wrap {
+    background-color: #66afe9;
+}
+.index-admin > div{
+    display: inline-block;
+}
+.left-admin {
+    float: left;
+}
+.body-content {
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+}
+a {
+    color: black;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+.pages > p > a:before{
+    content: ">";
+    color: #3c3c3c;
+    padding-right: 5px;
+
+}
