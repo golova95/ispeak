@@ -3,7 +3,7 @@
  */
 
 $( document ).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').toggle();
     $(".side-nav .collapse").on("hide.bs.collapse", function() {
         $(this).prev().find(".fa").eq(1).removeClass("fa-angle-right").addClass("fa-angle-down");
     });
