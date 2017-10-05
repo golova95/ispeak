@@ -96,7 +96,7 @@ class LoginForm extends Model
             if(!$this -> getRecover($user->id) || strtotime($this->getRecover($user->id)->expires) < time()) {
                 $string = md5($user->username.$user->password.time());
 
-                if ($this->contact($user->email, $string)) {
+                if ($this->contact($user->email, $string, $user->username)) {
 
                     $recover = new Recover();
                     $recover->user_id = $user->id;
@@ -116,15 +116,20 @@ class LoginForm extends Model
         }
     }
 
-    public function contact($email, $string)
+    public function contact($email, $string, $name)
     {
+        $template = Yii::$app->templateManager->getTemplate('passworddrop');
+
+        $template->parseBody([
+            'url' => $string,
+            'login' => $name,
+        ]);
+
             Yii::$app->mailer->compose()
                 ->setTo($email)
                 ->setFrom('ispeak@gmail.com')
-                ->setSubject("Order")
-                ->setHtmlBody("
-                <a href='http://learn.ispeak-school.by/recover?hash=$string'>link</a>
-                ")
+                ->setSubject($template->subject)
+                ->setHtmlBody($template->body)
                 ->send();
 
             return true;

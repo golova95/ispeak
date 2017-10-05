@@ -26699,3 +26699,1983 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2017-10-05 11:56:56 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Connection.php:646
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Connection.php(646): PDO->__construct('mysql:host=loca...', 'root', '1234', NULL)
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Command.php(910): yii\db\Command->prepare(true)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/mysql/Schema.php(199): yii\db\Command->queryAll()
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/mysql/Schema.php(98): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Schema.php(152): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/controllers/MigrateController.php(194): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(814): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(155): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#17 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#18 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#19 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#20 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/artsem/PhpstormProjects/ispeak/yii(20): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Connection.php:584
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Command.php(910): yii\db\Command->prepare(true)
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/mysql/Schema.php(199): yii\db\Command->queryAll()
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/mysql/Schema.php(98): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Schema.php(152): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/controllers/MigrateController.php(194): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(814): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(155): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#15 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#16 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#17 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#18 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/artsem/PhpstormProjects/ispeak/yii(20): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2017-10-05 11:56:56 [-][-][-][info][application] $_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/ld/81k2w5_10dg5b6lpj3gcbc7m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.dCzTqXAyC5/Render'
+    'USER' => 'artsem'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.xFZqkOKsEo/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
+    'PWD' => '/Users/artsem/PhpstormProjects/ispeak'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/artsem'
+    'LOGNAME' => 'artsem'
+    'LC_CTYPE' => 'ru_RU.UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1507204616.5088
+    'REQUEST_TIME' => 1507204616
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@vendor/yiimaker/yii2-email-templates/src/migrations'
+    ]
+    'argc' => 3
+]
+2017-10-05 12:06:00 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Connection.php:646
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Connection.php(646): PDO->__construct('mysql:host=loca...', 'root', '1234', NULL)
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Command.php(910): yii\db\Command->prepare(true)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/mysql/Schema.php(199): yii\db\Command->queryAll()
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/mysql/Schema.php(98): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Schema.php(152): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/controllers/MigrateController.php(194): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(814): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(155): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#17 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#18 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#19 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#20 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/artsem/PhpstormProjects/ispeak/yii(20): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No such file or directory' in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Connection.php:584
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Command.php(910): yii\db\Command->prepare(true)
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/mysql/Schema.php(199): yii\db\Command->queryAll()
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/mysql/Schema.php(98): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/Schema.php(152): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/controllers/MigrateController.php(194): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(814): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(155): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#15 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#16 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#17 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#18 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/artsem/PhpstormProjects/ispeak/yii(20): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2017-10-05 12:05:59 [-][-][-][info][application] $_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/ld/81k2w5_10dg5b6lpj3gcbc7m0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.dCzTqXAyC5/Render'
+    'USER' => 'artsem'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.xFZqkOKsEo/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x7:0x31'
+    'PATH' => '/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin'
+    'PWD' => '/Users/artsem/PhpstormProjects/ispeak'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/artsem'
+    'LOGNAME' => 'artsem'
+    'LC_CTYPE' => 'ru_RU.UTF-8'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1507205159.9865
+    'REQUEST_TIME' => 1507205159
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@vendor/yiimaker/yii2-email-templates/src/migrations'
+    ]
+    'argc' => 3
+]
+2017-10-05 15:40:25 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\gii\Module::email-templates in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Component.php:201
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(529): yii\base\Component->__set('email-templates', Array)
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\gii\Module), Array)
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(158): yii\base\Object->__construct(Array)
+#3 [internal function]: yii\base\Module->__construct('gii', Object(yii\web\Application), Array)
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\gii\\Module', Array, Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('yii\\gii\\Module', Array, Array)
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(309): yii\base\Module->getModule('gii')
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(272): yii\web\Application->bootstrap()
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Object.php(107): yii\base\Application->init()
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(205): yii\base\Object->__construct(Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->__construct(Array)
+#14 {main}
+2017-10-05 15:40:25 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1491261759.1507206399'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1491261759.1507206399'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '58233'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507207225.63
+    'REQUEST_TIME' => 1507207225
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 15:41:15 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\gii\Module::email-templates in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Component.php:201
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(529): yii\base\Component->__set('email-templates', Array)
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\gii\Module), Array)
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(158): yii\base\Object->__construct(Array)
+#3 [internal function]: yii\base\Module->__construct('gii', Object(yii\web\Application), Array)
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\gii\\Module', Array, Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('yii\\gii\\Module', Array, Array)
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(309): yii\base\Module->getModule('gii')
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(272): yii\web\Application->bootstrap()
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Object.php(107): yii\base\Application->init()
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(205): yii\base\Object->__construct(Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->__construct(Array)
+#14 {main}
+2017-10-05 15:41:15 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1761593262.1507207226'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1761593262.1507207226'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '58438'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507207275.12
+    'REQUEST_TIME' => 1507207275
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 15:45:03 [::1][1][f9c24c2e0911e9ae1a82c509251b30e9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/email-templates in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('email-templates', Array)
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/email-temp...', Array)
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-10-05 15:45:03 [::1][1][f9c24c2e0911e9ae1a82c509251b30e9][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.726472912.1507207486'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.726472912.1507207486'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '59372'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507207503.71
+    'REQUEST_TIME' => 1507207503
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 15:45:06 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unable to locate message source for category 'back/email-templates'. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('back/email-temp...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('back/email-temp...', 'Create template', Array, 'en-US')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/Module.php(107): yii\BaseYii::t('back/email-temp...', 'Create template', Array, NULL)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/views/default/index.php(32): ymaker\email\templates\Module::t('Create template')
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/controllers/DefaultController.php(65): yii\base\Controller->render('index', Array)
+#9 [internal function]: ymaker\email\templates\controllers\DefaultController->actionIndex()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-10-05 15:45:06 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1661070958.1507207504'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1661070958.1507207504'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '59372'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507207506.66
+    'REQUEST_TIME' => 1507207506
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 15:45:22 [::1][1][f9c24c2e0911e9ae1a82c509251b30e9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "email-templatccces/". in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templatcc...', Array)
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-10-05 15:45:22 [::1][1][f9c24c2e0911e9ae1a82c509251b30e9][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1756673831.1507207507'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1756673831.1507207507; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '59450'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templatccces/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507207522.06
+    'REQUEST_TIME' => 1507207522
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 15:52:49 [::1][-][-][error][ReflectionException] ReflectionException: Class \ymaker\email\templates\Module::class does not exist in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/di/Container.php:424
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/di/Container.php(424): ReflectionClass->__construct('\\ymaker\\email\\t...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/di/Container.php(364): yii\di\Container->getDependencies('\\ymaker\\email\\t...')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('\\ymaker\\email\\t...', Array, Array)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('\\ymaker\\email\\t...', Array, Array)
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(581): yii\base\Module->getModule('email-templates')
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('')
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-10-05 15:52:49 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1848779700.1507207953'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1848779700.1507207953'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '61242'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507207969.4
+    'REQUEST_TIME' => 1507207969
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 15:53:05 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unable to locate message source for category 'back/email-templates'. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('back/email-temp...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('back/email-temp...', 'Create template', Array, 'en-US')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/Module.php(107): yii\BaseYii::t('back/email-temp...', 'Create template', Array, NULL)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/views/default/index.php(32): ymaker\email\templates\Module::t('Create template')
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/controllers/DefaultController.php(65): yii\base\Controller->render('index', Array)
+#9 [internal function]: ymaker\email\templates\controllers\DefaultController->actionIndex()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-10-05 15:53:05 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1331713553.1507207970'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1331713553.1507207970'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '61311'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507207984.99
+    'REQUEST_TIME' => 1507207984
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 15:53:07 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unable to locate message source for category 'back/email-templates'. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('back/email-temp...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('back/email-temp...', 'Create template', Array, 'en-US')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/Module.php(107): yii\BaseYii::t('back/email-temp...', 'Create template', Array, NULL)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/views/default/index.php(32): ymaker\email\templates\Module::t('Create template')
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/controllers/DefaultController.php(65): yii\base\Controller->render('index', Array)
+#9 [internal function]: ymaker\email\templates\controllers\DefaultController->actionIndex()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-10-05 15:53:07 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.413774203.1507207985'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.413774203.1507207985'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '61312'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507207987.71
+    'REQUEST_TIME' => 1507207987
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 15:53:54 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should to configure the language provider in /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/Module.php:80
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Object.php(107): ymaker\email\templates\Module->init()
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(158): yii\base\Object->__construct(Array)
+#2 [internal function]: yii\base\Module->__construct('email-templates', Object(yii\web\Application), Array)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('\\ymaker\\email\\t...', Array, Array)
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('\\ymaker\\email\\t...', Array, Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(581): yii\base\Module->getModule('email-templates')
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('')
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#12 {main}
+2017-10-05 15:53:54 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.669423384.1507207988'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.669423384.1507207988'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '61521'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507208034.72
+    'REQUEST_TIME' => 1507208034
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 15:54:00 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unable to locate message source for category 'back/email-templates'. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('back/email-temp...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('back/email-temp...', 'Create template', Array, 'en-US')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/Module.php(107): yii\BaseYii::t('back/email-temp...', 'Create template', Array, NULL)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/views/default/index.php(32): ymaker\email\templates\Module::t('Create template')
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/controllers/DefaultController.php(65): yii\base\Controller->render('index', Array)
+#9 [internal function]: ymaker\email\templates\controllers\DefaultController->actionIndex()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-10-05 15:54:00 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1777537472.1507208035'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1777537472.1507208035'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '61523'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507208040.34
+    'REQUEST_TIME' => 1507208040
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 15:55:34 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\gii\Module::email-templates in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Component.php:201
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(529): yii\base\Component->__set('email-templates', Array)
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(yii\gii\Module), Array)
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(158): yii\base\Object->__construct(Array)
+#3 [internal function]: yii\base\Module->__construct('gii', Object(yii\web\Application), Array)
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\gii\\Module', Array, Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('yii\\gii\\Module', Array, Array)
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(423): yii\BaseYii::createObject(Array, Array)
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(309): yii\base\Module->getModule('gii')
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(272): yii\web\Application->bootstrap()
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Object.php(107): yii\base\Application->init()
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(205): yii\base\Object->__construct(Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->__construct(Array)
+#14 {main}
+2017-10-05 15:55:34 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.773942811.1507208041'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.773942811.1507208041'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '61924'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507208134.14
+    'REQUEST_TIME' => 1507208134
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 15:56:20 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unable to locate message source for category 'back/email-templates'. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('back/email-temp...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('back/email-temp...', 'Create template', Array, 'en-US')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/Module.php(107): yii\BaseYii::t('back/email-temp...', 'Create template', Array, NULL)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/views/default/index.php(32): ymaker\email\templates\Module::t('Create template')
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/controllers/DefaultController.php(65): yii\base\Controller->render('index', Array)
+#9 [internal function]: ymaker\email\templates\controllers\DefaultController->actionIndex()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-10-05 15:56:20 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1309857927.1507208135'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1309857927.1507208135'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '62113'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507208180.18
+    'REQUEST_TIME' => 1507208180
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 15:56:22 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unable to locate message source for category 'back/email-templates'. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('back/email-temp...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('back/email-temp...', 'Create template', Array, 'en-US')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/Module.php(107): yii\BaseYii::t('back/email-temp...', 'Create template', Array, NULL)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/views/default/index.php(32): ymaker\email\templates\Module::t('Create template')
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/controllers/DefaultController.php(65): yii\base\Controller->render('index', Array)
+#9 [internal function]: ymaker\email\templates\controllers\DefaultController->actionIndex()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-10-05 15:56:22 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1499411177.1507208181'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1499411177.1507208181'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '62114'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507208182.49
+    'REQUEST_TIME' => 1507208182
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 16:01:38 [::1][1][f9c24c2e0911e9ae1a82c509251b30e9][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "email-templates/gii/". in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-10-05 16:01:38 [::1][1][f9c24c2e0911e9ae1a82c509251b30e9][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.861009292.1507208183'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.861009292.1507208183'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '63413'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/gii/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507208498.09
+    'REQUEST_TIME' => 1507208498
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 16:01:41 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unable to locate message source for category 'back/email-templates'. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('back/email-temp...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('back/email-temp...', 'Create template', Array, 'en-US')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/Module.php(107): yii\BaseYii::t('back/email-temp...', 'Create template', Array, NULL)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/views/default/index.php(32): ymaker\email\templates\Module::t('Create template')
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/controllers/DefaultController.php(65): yii\base\Controller->render('index', Array)
+#9 [internal function]: ymaker\email\templates\controllers\DefaultController->actionIndex()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-10-05 16:01:41 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.504999149.1507208499'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.504999149.1507208499'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '63413'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507208501.77
+    'REQUEST_TIME' => 1507208501
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 16:02:58 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unable to locate message source for category 'back/email-templates'. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('back/email-temp...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('back/email-temp...', 'Create template', Array, 'en-US')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/Module.php(107): yii\BaseYii::t('back/email-temp...', 'Create template', Array, NULL)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/views/default/index.php(32): ymaker\email\templates\Module::t('Create template')
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/controllers/DefaultController.php(65): yii\base\Controller->render('index', Array)
+#9 [internal function]: ymaker\email\templates\controllers\DefaultController->actionIndex()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-10-05 16:02:58 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.976843804.1507208502'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.976843804.1507208502'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '63754'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507208578.1
+    'REQUEST_TIME' => 1507208578
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 16:02:59 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unable to locate message source for category 'back/email-templates'. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('back/email-temp...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('back/email-temp...', 'Create template', Array, 'en-US')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/Module.php(107): yii\BaseYii::t('back/email-temp...', 'Create template', Array, NULL)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/views/default/index.php(32): ymaker\email\templates\Module::t('Create template')
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/controllers/DefaultController.php(65): yii\base\Controller->render('index', Array)
+#9 [internal function]: ymaker\email\templates\controllers\DefaultController->actionIndex()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-10-05 16:02:59 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1143433027.1507208579'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1143433027.1507208579'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '63755'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507208579.8
+    'REQUEST_TIME' => 1507208579
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 16:03:01 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unable to locate message source for category 'back/email-templates'. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('back/email-temp...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('back/email-temp...', 'Create template', Array, 'en-US')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/Module.php(107): yii\BaseYii::t('back/email-temp...', 'Create template', Array, NULL)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/views/default/index.php(32): ymaker\email\templates\Module::t('Create template')
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/controllers/DefaultController.php(65): yii\base\Controller->render('index', Array)
+#9 [internal function]: ymaker\email\templates\controllers\DefaultController->actionIndex()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-10-05 16:03:01 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.419455210.1507208580'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.419455210.1507208580'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '63756'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507208581.46
+    'REQUEST_TIME' => 1507208581
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 16:05:13 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unable to locate message source for category 'back/email-templates'. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('back/email-temp...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('back/email-temp...', 'Create template', Array, 'en-US')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/Module.php(107): yii\BaseYii::t('back/email-temp...', 'Create template', Array, NULL)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/views/default/index.php(32): ymaker\email\templates\Module::t('Create template')
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/controllers/DefaultController.php(65): yii\base\Controller->render('index', Array)
+#9 [internal function]: ymaker\email\templates\controllers\DefaultController->actionIndex()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-10-05 16:05:13 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.98756057.1507208582'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.98756057.1507208582; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '64311'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507208713.48
+    'REQUEST_TIME' => 1507208713
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 16:05:16 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unable to locate message source for category 'back/email-templates'. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('back/email-temp...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('back/email-temp...', 'Create template', Array, 'en-US')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/Module.php(107): yii\BaseYii::t('back/email-temp...', 'Create template', Array, NULL)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/views/default/index.php(32): ymaker\email\templates\Module::t('Create template')
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/controllers/DefaultController.php(65): yii\base\Controller->render('index', Array)
+#9 [internal function]: ymaker\email\templates\controllers\DefaultController->actionIndex()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-10-05 16:05:16 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.369933708.1507208714'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.369933708.1507208714'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '64312'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507208716.19
+    'REQUEST_TIME' => 1507208716
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 16:06:08 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unable to locate message source for category 'email-templates'. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('email-templates')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('email-templates', 'Create template', Array, 'en-US')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/Module.php(107): yii\BaseYii::t('email-templates', 'Create template', Array, NULL)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/views/default/index.php(32): ymaker\email\templates\Module::t('Create template')
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/controllers/DefaultController.php(65): yii\base\Controller->render('index', Array)
+#9 [internal function]: ymaker\email\templates\controllers\DefaultController->actionIndex()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-10-05 16:06:08 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.2061128048.1507208717'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.2061128048.1507208717'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '64540'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507208768.8
+    'REQUEST_TIME' => 1507208768
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 16:06:11 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unable to locate message source for category 'email-templates'. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('email-templates')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('email-templates', 'Create template', Array, 'en-US')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/Module.php(107): yii\BaseYii::t('email-templates', 'Create template', Array, NULL)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/views/default/index.php(32): ymaker\email\templates\Module::t('Create template')
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/controllers/DefaultController.php(65): yii\base\Controller->render('index', Array)
+#9 [internal function]: ymaker\email\templates\controllers\DefaultController->actionIndex()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-10-05 16:06:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1044341313.1507208769'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1044341313.1507208769'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '64541'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507208771.3
+    'REQUEST_TIME' => 1507208771
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 16:08:05 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unable to locate message source for category 'email-templates/entity'. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('email-templates...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('email-templates...', 'ID', Array, 'en-US')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/models/entities/EmailTemplate.php(63): yii\BaseYii::t('email-templates...', 'ID')
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1552): ymaker\email\templates\models\entities\EmailTemplate->attributeLabels()
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/DataColumn.php(148): yii\db\BaseActiveRecord->getAttributeLabel('id')
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/DataColumn.php(123): yii\grid\DataColumn->getHeaderCellLabel()
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/Column.php(85): yii\grid\DataColumn->renderHeaderCellContent()
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(408): yii\grid\Column->renderHeaderCell()
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(346): yii\grid\GridView->renderTableHeader()
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(159): yii\grid\GridView->renderItems()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(134): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(137): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#15 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#16 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/views/default/index.php(41): yii\base\Widget::widget(Array)
+#17 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#18 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#19 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#20 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#21 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/controllers/DefaultController.php(65): yii\base\Controller->render('index', Array)
+#22 [internal function]: ymaker\email\templates\controllers\DefaultController->actionIndex()
+#23 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#25 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#26 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#27 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#29 {main}
+2017-10-05 16:08:05 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1117035930.1507208772'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1117035930.1507208772'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '65014'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507208884.99
+    'REQUEST_TIME' => 1507208884
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 16:10:27 [::1][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unable to locate message source for category 'email-templates/entity'. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('email-templates...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/BaseYii.php(509): yii\i18n\I18N->translate('email-templates...', 'ID', Array, 'en-US')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/models/entities/EmailTemplate.php(63): yii\BaseYii::t('email-templates...', 'ID')
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1552): ymaker\email\templates\models\entities\EmailTemplate->attributeLabels()
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/DataColumn.php(148): yii\db\BaseActiveRecord->getAttributeLabel('id')
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/DataColumn.php(123): yii\grid\DataColumn->getHeaderCellLabel()
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/Column.php(85): yii\grid\DataColumn->renderHeaderCellContent()
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(408): yii\grid\Column->renderHeaderCell()
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(346): yii\grid\GridView->renderTableHeader()
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(159): yii\grid\GridView->renderItems()
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(134): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(137): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#15 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#16 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/views/default/index.php(41): yii\base\Widget::widget(Array)
+#17 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#18 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#19 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#20 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(ymaker\email\templates\controllers\DefaultController))
+#21 /Users/artsem/PhpstormProjects/ispeak/vendor/yiimaker/yii2-email-templates/src/controllers/DefaultController.php(65): yii\base\Controller->render('index', Array)
+#22 [internal function]: ymaker\email\templates\controllers\DefaultController->actionIndex()
+#23 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#24 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#25 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#26 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('email-templates...', Array)
+#27 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#29 {main}
+2017-10-05 16:10:27 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => 'f9c24c2e0911e9ae1a82c509251b30e9'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1686607048.1507208886'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=f9c24c2e0911e9ae1a82c509251b30e9; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1686607048.1507208886'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '49215'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/email-templates/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507209027.61
+    'REQUEST_TIME' => 1507209027
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 16:23:41 [::1][-][3479af9a027e854d57b24fcb5fe167f4][error][Error] Error: Call to a member function parse() on null in /Users/artsem/PhpstormProjects/ispeak/models/LoginForm.php:122
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/models/LoginForm.php(99): app\models\LoginForm->contact('artom.golovench...', 'fc5cffba4f0f2e0...')
+#1 /Users/artsem/PhpstormProjects/ispeak/controllers/SiteController.php(111): app\models\LoginForm->restore()
+#2 [internal function]: app\controllers\SiteController->actionLogin()
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2017-10-05 16:23:41 [::1][-][3479af9a027e854d57b24fcb5fe167f4][info][application] $_POST = [
+    '_csrf' => 'WcnF1RgT3_R3qv7wUQ_29WS8XjGrtI4L-ZUk-B3zdsFbY4yONxJrpkqoYl-1DOQcntQJL6siJOmZBnmHcjr2jA=='
+    'LoginForm' => [
+        'email' => 'artom.golovenchik@gmail.com'
+    ]
+    'ajax' => 'restore-form'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => '3479af9a027e854d57b24fcb5fe167f4'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1276295747.1507209783'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '167'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://is'
+    'HTTP_X_CSRF_TOKEN' => 'WcnF1RgT3_R3qv7wUQ_29WS8XjGrtI4L-ZUk-B3zdsFbY4yONxJrpkqoYl-1DOQcntQJL6siJOmZBnmHcjr2jA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://is/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=3479af9a027e854d57b24fcb5fe167f4; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1276295747.1507209783'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '52487'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507209821.45
+    'REQUEST_TIME' => 1507209821
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 16:36:30 [::1][-][3479af9a027e854d57b24fcb5fe167f4][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown component ID: EmailTemplate in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/di/ServiceLocator.php:138
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/models/LoginForm.php(121): yii\di\ServiceLocator->get('EmailTemplate')
+#1 /Users/artsem/PhpstormProjects/ispeak/models/LoginForm.php(99): app\models\LoginForm->contact('artom.golovench...', '3397ff23e97ee67...')
+#2 /Users/artsem/PhpstormProjects/ispeak/controllers/SiteController.php(111): app\models\LoginForm->restore()
+#3 [internal function]: app\controllers\SiteController->actionLogin()
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-10-05 16:36:30 [::1][-][3479af9a027e854d57b24fcb5fe167f4][info][application] $_POST = [
+    '_csrf' => 'WcnF1RgT3_R3qv7wUQ_29WS8XjGrtI4L-ZUk-B3zdsFbY4yONxJrpkqoYl-1DOQcntQJL6siJOmZBnmHcjr2jA=='
+    'LoginForm' => [
+        'email' => 'artom.golovenchik@gmail.com'
+    ]
+    'ajax' => 'restore-form'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => '3479af9a027e854d57b24fcb5fe167f4'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.298553752.1507209832'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '167'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://is'
+    'HTTP_X_CSRF_TOKEN' => 'WcnF1RgT3_R3qv7wUQ_29WS8XjGrtI4L-ZUk-B3zdsFbY4yONxJrpkqoYl-1DOQcntQJL6siJOmZBnmHcjr2jA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://is/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=3479af9a027e854d57b24fcb5fe167f4; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.298553752.1507209832'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '55480'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507210590.13
+    'REQUEST_TIME' => 1507210590
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 16:36:39 [::1][-][3479af9a027e854d57b24fcb5fe167f4][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Unknown component ID: EmailTemplate in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/di/ServiceLocator.php:138
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/models/LoginForm.php(121): yii\di\ServiceLocator->get('EmailTemplate')
+#1 /Users/artsem/PhpstormProjects/ispeak/models/LoginForm.php(99): app\models\LoginForm->contact('artom.golovench...', 'be005a0d7316b28...')
+#2 /Users/artsem/PhpstormProjects/ispeak/controllers/SiteController.php(111): app\models\LoginForm->restore()
+#3 [internal function]: app\controllers\SiteController->actionLogin()
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-10-05 16:36:39 [::1][-][3479af9a027e854d57b24fcb5fe167f4][info][application] $_POST = [
+    '_csrf' => '-UQ885xg5l6oXthw9IdqtExFCxicQaAG5tugjXukd7X77nWos2FSDJVcRN8QhHhdti1cBpzXCuSGSP3yFG33-A=='
+    'LoginForm' => [
+        'email' => 'artom.golovenchik@gmail.com'
+    ]
+    'ajax' => 'restore-form'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => '3479af9a027e854d57b24fcb5fe167f4'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1487705650.1507210596'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '167'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'http://is'
+    'HTTP_X_CSRF_TOKEN' => '-UQ885xg5l6oXthw9IdqtExFCxicQaAG5tugjXukd7X77nWos2FSDJVcRN8QhHhdti1cBpzXCuSGSP3yFG33-A=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://is/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=3479af9a027e854d57b24fcb5fe167f4; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1487705650.1507210596'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '55501'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507210599.57
+    'REQUEST_TIME' => 1507210599
+    'argv' => []
+    'argc' => 0
+]
+2017-10-05 16:40:00 [::1][-][3479af9a027e854d57b24fcb5fe167f4][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/site in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('site', Array)
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/site', Array)
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-10-05 16:40:00 [::1][-][3479af9a027e854d57b24fcb5fe167f4][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => '3479af9a027e854d57b24fcb5fe167f4'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.241498804.1507210647'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=3479af9a027e854d57b24fcb5fe167f4; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.241498804.1507210647'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '56337'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/site'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507210800.72
+    'REQUEST_TIME' => 1507210800
+    'argv' => []
+    'argc' => 0
+]

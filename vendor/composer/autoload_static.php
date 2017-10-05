@@ -17,6 +17,8 @@ class ComposerStaticInitc22a6a76a7e576c519fe0104bbd8dbd7
     public static $prefixLengthsPsr4 = array (
         'y' => 
         array (
+            'ymaker\\email\\templates\\tests\\' => 29,
+            'ymaker\\email\\templates\\' => 23,
             'yii\\swiftmailer\\' => 16,
             'yii\\gii\\' => 8,
             'yii\\faker\\' => 10,
@@ -24,6 +26,11 @@ class ComposerStaticInitc22a6a76a7e576c519fe0104bbd8dbd7
             'yii\\composer\\' => 13,
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
+            'yii2deman\\tools\\i18n\\' => 21,
+        ),
+        'v' => 
+        array (
+            'vova07\\imperavi\\' => 16,
         ),
         'p' => 
         array (
@@ -76,6 +83,14 @@ class ComposerStaticInitc22a6a76a7e576c519fe0104bbd8dbd7
     );
 
     public static $prefixDirsPsr4 = array (
+        'ymaker\\email\\templates\\tests\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiimaker/yii2-email-templates/tests',
+        ),
+        'ymaker\\email\\templates\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiimaker/yii2-email-templates/src',
+        ),
         'yii\\swiftmailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-swiftmailer',
@@ -103,6 +118,14 @@ class ComposerStaticInitc22a6a76a7e576c519fe0104bbd8dbd7
         'yii\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
+        ),
+        'yii2deman\\tools\\i18n\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yii2deman/yii2deman-language-provider/src',
+        ),
+        'vova07\\imperavi\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vova07/yii2-imperavi-widget/src',
         ),
         'phpDocumentor\\Reflection\\' => 
         array (

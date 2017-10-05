@@ -149,7 +149,11 @@ class SiteController extends Controller
 
     public function actionTest()
     {
-        return $this->render('test', []);
+        $template = Yii::$app->templateManager->getTemplate('passworddrop', 'ru');
+
+        return $this->render('test', [
+            'template' => $template,
+        ]);
     }
 
     public function actionConfirm()
