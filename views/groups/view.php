@@ -39,7 +39,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'class',
             'date',
             'level',
-            'places',
+            [
+                'attribute'=>'places',
+                'value' => 'Занято мест: '.sizeof($users).' из '.$model->places,
+            ],
             'first',
             'homework',
         ],

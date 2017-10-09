@@ -67,12 +67,7 @@ if (Yii::$app->user->isGuest || Yii::$app->user->identity['user_id'] != 1 || Yii
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="/students/" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-user-plus"></i>  СТУДЕНТЫ <i class="fa fa-fw fa-angle-down pull-right"></i></a>
-                        <ul id="submenu-1" class="collapse">
-                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.1</a></li>
-                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.2</a></li>
-                            <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.3</a></li>
-                        </ul>
+                        <a href="/students/"><i class="fa fa-fw fa-user-plus"></i>  СТУДЕНТЫ </a>
                     </li>
                     <li>
                         <a href="/groups/"><i class="fa fa-fw fa-group"></i> ГРУППЫ</a>

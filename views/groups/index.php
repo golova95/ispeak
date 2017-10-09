@@ -30,7 +30,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'class',
             'date',
             'level',
-            'places',
+            [
+                'attribute'=>'places',
+                'label' => 'Свободных Мест:',
+                'value' => 'places',
+            ],
             'first',
 //            'last',
             'homework',
@@ -40,3 +44,14 @@ $this->params['breadcrumbs'][] = $this->title;
     ]); ?>
 <?php Pjax::end(); ?></div>
 
+
+
+<?// var_dump($dataProvider->models); ?>
+
+
+
+<? foreach ($dataProvider->models as $group){
+
+    var_dump($group);
+    echo "<br><br>";
+} ?>

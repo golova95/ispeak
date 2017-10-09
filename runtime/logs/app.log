@@ -28679,3 +28679,567 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2017-10-09 10:12:25 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in /Users/artsem/PhpstormProjects/ispeak/views/students/index.php:40
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/views/students/index.php(40): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/artsem/P...', 40, Array)
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(app\controllers\StudentsController))
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\StudentsController))
+#5 /Users/artsem/PhpstormProjects/ispeak/controllers/StudentsController.php(51): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\StudentsController->actionIndex()
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('students/', Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-10-09 10:12:25 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => '0e7af1106bb68ed2e753ab73c4961160'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1695090904.1507532970'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://is/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=0e7af1106bb68ed2e753ab73c4961160; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1695090904.1507532970'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '54375'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/students/'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507533145.13
+    'REQUEST_TIME' => 1507533145
+    'argv' => []
+    'argc' => 0
+]
+2017-10-09 10:33:56 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /Users/artsem/PhpstormProjects/ispeak/views/groups/index.php:35
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/views/groups/index.php(35): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Users/artsem/P...', 35, Array)
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(app\controllers\GroupsController))
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\GroupsController))
+#5 /Users/artsem/PhpstormProjects/ispeak/controllers/GroupsController.php(47): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\GroupsController->actionIndex()
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('groups/index', Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-10-09 10:33:56 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => '0e7af1106bb68ed2e753ab73c4961160'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.417992700.1507534186'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://is/groups/view?id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=0e7af1106bb68ed2e753ab73c4961160; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.417992700.1507534186'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '59695'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/groups/index'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507534436.42
+    'REQUEST_TIME' => 1507534436
+    'argv' => []
+    'argc' => 0
+]
+2017-10-09 10:34:11 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: call_user_func() expects parameter 1 to be a valid callback, no array or string given in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/DataColumn.php:219
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'call_user_func(...', '/Users/artsem/P...', 219, Array)
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/DataColumn.php(219): call_user_func(3, Object(app\models\Groups), 1, 0, Object(yii\grid\DataColumn))
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/DataColumn.php(233): yii\grid\DataColumn->getDataCellValue(Object(app\models\Groups), 1, 0)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Groups), 1, 0)
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(app\models\Groups), 1, 0)
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(app\models\Groups), 1, 0)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(159): yii\grid\GridView->renderItems()
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(134): yii\grid\GridView->renderSection('{items}')
+#10 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(137): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#14 /Users/artsem/PhpstormProjects/ispeak/views/groups/index.php(22): yii\base\Widget::widget(Array)
+#15 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#16 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#17 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(app\controllers\GroupsController))
+#18 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\GroupsController))
+#19 /Users/artsem/PhpstormProjects/ispeak/controllers/GroupsController.php(47): yii\base\Controller->render('index', Array)
+#20 [internal function]: app\controllers\GroupsController->actionIndex()
+#21 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#22 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#23 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#24 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('groups/index', Array)
+#25 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#27 {main}
+2017-10-09 10:34:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => '0e7af1106bb68ed2e753ab73c4961160'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.147627491.1507534437'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://is/groups/view?id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=0e7af1106bb68ed2e753ab73c4961160; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.147627491.1507534437'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '59757'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/groups/index'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507534451.17
+    'REQUEST_TIME' => 1507534451
+    'argv' => []
+    'argc' => 0
+]
+2017-10-09 10:34:16 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: call_user_func() expects parameter 1 to be a valid callback, no array or string given in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/DataColumn.php:219
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'call_user_func(...', '/Users/artsem/P...', 219, Array)
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/DataColumn.php(219): call_user_func(3, Object(app\models\Groups), 1, 0, Object(yii\grid\DataColumn))
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/DataColumn.php(233): yii\grid\DataColumn->getDataCellValue(Object(app\models\Groups), 1, 0)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Groups), 1, 0)
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(app\models\Groups), 1, 0)
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(app\models\Groups), 1, 0)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(159): yii\grid\GridView->renderItems()
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(134): yii\grid\GridView->renderSection('{items}')
+#10 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(137): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#14 /Users/artsem/PhpstormProjects/ispeak/views/groups/index.php(22): yii\base\Widget::widget(Array)
+#15 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#16 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#17 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(app\controllers\GroupsController))
+#18 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\GroupsController))
+#19 /Users/artsem/PhpstormProjects/ispeak/controllers/GroupsController.php(47): yii\base\Controller->render('index', Array)
+#20 [internal function]: app\controllers\GroupsController->actionIndex()
+#21 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#22 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#23 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#24 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('groups/index', Array)
+#25 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#27 {main}
+2017-10-09 10:34:16 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => '0e7af1106bb68ed2e753ab73c4961160'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.235594325.1507534452'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://is/groups/view?id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=0e7af1106bb68ed2e753ab73c4961160; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.235594325.1507534452'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '59758'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/groups/index'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507534456.51
+    'REQUEST_TIME' => 1507534456
+    'argv' => []
+    'argc' => 0
+]
+2017-10-09 10:38:27 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Groups::Ð¡Ð²Ð¾Ð±Ð¾Ð´Ð½Ñ‹Ñ… ÐœÐµÑÑ‚: places in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/BaseActiveRecord.php(285): yii\base\Component->__get('\xD0\xA1\xD0\xB2\xD0\xBE\xD0\xB1\xD0\xBE\xD0\xB4\xD0\xBD\xD1...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('\xD0\xA1\xD0\xB2\xD0\xBE\xD0\xB1\xD0\xBE\xD0\xB4\xD0\xBD\xD1...')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/DataColumn.php(217): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Groups), '\xD0\xA1\xD0\xB2\xD0\xBE\xD0\xB1\xD0\xBE\xD0\xB4\xD0\xBD\xD1...')
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/DataColumn.php(233): yii\grid\DataColumn->getDataCellValue(Object(app\models\Groups), 1, 0)
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Groups), 1, 0)
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(app\models\Groups), 1, 0)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(app\models\Groups), 1, 0)
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(159): yii\grid\GridView->renderItems()
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(134): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(137): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#15 /Users/artsem/PhpstormProjects/ispeak/views/groups/index.php(22): yii\base\Widget::widget(Array)
+#16 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#17 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#18 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(app\controllers\GroupsController))
+#19 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\GroupsController))
+#20 /Users/artsem/PhpstormProjects/ispeak/controllers/GroupsController.php(47): yii\base\Controller->render('index', Array)
+#21 [internal function]: app\controllers\GroupsController->actionIndex()
+#22 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#25 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('groups/index', Array)
+#26 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#28 {main}
+2017-10-09 10:38:27 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => '0e7af1106bb68ed2e753ab73c4961160'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.811196707.1507534457'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://is/groups/view?id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=0e7af1106bb68ed2e753ab73c4961160; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.811196707.1507534457'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '60883'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/groups/index'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507534707.46
+    'REQUEST_TIME' => 1507534707
+    'argv' => []
+    'argc' => 0
+]
+2017-10-09 10:38:29 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Groups::Ð¡Ð²Ð¾Ð±Ð¾Ð´Ð½Ñ‹Ñ… ÐœÐµÑÑ‚: places in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/db/BaseActiveRecord.php(285): yii\base\Component->__get('\xD0\xA1\xD0\xB2\xD0\xBE\xD0\xB1\xD0\xBE\xD0\xB4\xD0\xBD\xD1...')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('\xD0\xA1\xD0\xB2\xD0\xBE\xD0\xB1\xD0\xBE\xD0\xB4\xD0\xBD\xD1...')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/DataColumn.php(217): yii\helpers\BaseArrayHelper::getValue(Object(app\models\Groups), '\xD0\xA1\xD0\xB2\xD0\xBE\xD0\xB1\xD0\xBE\xD0\xB4\xD0\xBD\xD1...')
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/DataColumn.php(233): yii\grid\DataColumn->getDataCellValue(Object(app\models\Groups), 1, 0)
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/Column.php(110): yii\grid\DataColumn->renderDataCellContent(Object(app\models\Groups), 1, 0)
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(507): yii\grid\Column->renderDataCell(Object(app\models\Groups), 1, 0)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(476): yii\grid\GridView->renderTableRow(Object(app\models\Groups), 1, 0)
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(347): yii\grid\GridView->renderTableBody()
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(159): yii\grid\GridView->renderItems()
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(134): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/widgets/BaseListView.php(137): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/grid/GridView.php(291): yii\widgets\BaseListView->run()
+#14 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Widget.php(139): yii\grid\GridView->run()
+#15 /Users/artsem/PhpstormProjects/ispeak/views/groups/index.php(22): yii\base\Widget::widget(Array)
+#16 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#17 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#18 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(app\controllers\GroupsController))
+#19 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\GroupsController))
+#20 /Users/artsem/PhpstormProjects/ispeak/controllers/GroupsController.php(47): yii\base\Controller->render('index', Array)
+#21 [internal function]: app\controllers\GroupsController->actionIndex()
+#22 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#23 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#24 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#25 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('groups/index', Array)
+#26 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#28 {main}
+2017-10-09 10:38:29 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => '0e7af1106bb68ed2e753ab73c4961160'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.939009868.1507534708'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://is/groups/view?id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=0e7af1106bb68ed2e753ab73c4961160; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.939009868.1507534708'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '60884'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/groups/index'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507534709.06
+    'REQUEST_TIME' => 1507534709
+    'argv' => []
+    'argc' => 0
+]
+2017-10-09 10:54:25 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\db\ActiveQuery::id in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/controllers/GroupsController.php(157): yii\base\Component->__get('id')
+#1 /Users/artsem/PhpstormProjects/ispeak/controllers/GroupsController.php(43): app\controllers\GroupsController->freePlaces(Object(yii\data\ActiveDataProvider))
+#2 [internal function]: app\controllers\GroupsController->actionIndex()
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#6 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('groups/index', Array)
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2017-10-09 10:54:25 [::1][-][-][info][application] $_GET = [
+    'sort' => 'places'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => '0e7af1106bb68ed2e753ab73c4961160'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.1280995895.1507535217'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://is/groups/view?id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=0e7af1106bb68ed2e753ab73c4961160; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.1280995895.1507535217'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '64894'
+    'REDIRECT_QUERY_STRING' => 'sort=places'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'sort=places'
+    'REQUEST_URI' => '/groups/index?sort=places'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507535665.83
+    'REQUEST_TIME' => 1507535665
+    'argv' => [
+        0 => 'sort=places'
+    ]
+    'argc' => 1
+]
+2017-10-09 10:55:55 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\db\ActiveQuery::places in /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Users/artsem/PhpstormProjects/ispeak/views/groups/index.php(55): yii\base\Component->__get('places')
+#1 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(330): require('/Users/artsem/P...')
+#2 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/artsem/P...', Array)
+#3 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/artsem/P...', Array, Object(app\controllers\GroupsController))
+#4 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\GroupsController))
+#5 /Users/artsem/PhpstormProjects/ispeak/controllers/GroupsController.php(47): yii\base\Controller->render('index', Array)
+#6 [internal function]: app\controllers\GroupsController->actionIndex()
+#7 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#10 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('groups/index', Array)
+#11 /Users/artsem/PhpstormProjects/ispeak/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/artsem/PhpstormProjects/ispeak/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-10-09 10:55:55 [::1][-][-][info][application] $_GET = [
+    'sort' => 'places'
+]
+
+$_COOKIE = [
+    '_csrf' => 'cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ªI[/´R=œ¯äéúhW\0–ªâ`“]oÉ€M\";}'
+    'PHPSESSID' => '0e7af1106bb68ed2e753ab73c4961160'
+    '_identity' => '38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a:2:{i:0;s:9:\"_identity\";i:1;s:19:\"[1,\"12345\",2592000]\";}'
+    '_ga' => 'GA1.1.583457541.1504784495'
+    '_gid' => 'GA1.1.436320912.1507535690'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'is'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://is/groups/view?id=4'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,ru-RU;q=0.8,ru;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=cfcaee3ad7eaa5b165c55198bbaee9ecdd4cd1826b28211758dd223f5edc8274a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%02%AAI%5B%2F%01%B4R%3D%02%9C%AF%E4%03%12%E9%FAhW%1E%00%96%AA%E2%60%93%5D%7Fo%C9%80M%22%3B%7D; PHPSESSID=0e7af1106bb68ed2e753ab73c4961160; _identity=38dfec7d0f0c27014d2dbb9ce1c9d617c6d4882548012de8bdbbb55ea4700dd6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A19%3A%22%5B1%2C%2212345%22%2C2592000%5D%22%3B%7D; _ga=GA1.1.583457541.1504784495; _gid=GA1.1.436320912.1507535690'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'is'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/artsem/PhpstormProjects/ispeak'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/artsem/PhpstormProjects/ispeak/web/index.php'
+    'REMOTE_PORT' => '65251'
+    'REDIRECT_QUERY_STRING' => 'sort=places'
+    'REDIRECT_URL' => '/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'sort=places'
+    'REQUEST_URI' => '/groups/index?sort=places'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1507535755.32
+    'REQUEST_TIME' => 1507535755
+    'argv' => [
+        0 => 'sort=places'
+    ]
+    'argc' => 1
+]

@@ -40,7 +40,7 @@ class GroupsController extends Controller
     public function actionIndex()
     {
         $searchModel = new GroupsSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider = $this->freePlaces($searchModel->search(Yii::$app->request->queryParams));
 
         return $this->render('index', [
             'searchModel' => $searchModel,
@@ -61,8 +61,10 @@ class GroupsController extends Controller
             ->where(['group_id' => $id])
             ->all();
 
+
+
         return $this->render('view', [
-            'model' => $this->findModel($id, 1),
+            'model' => $this->findModel($id),
             'users' => $users,
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -142,22 +144,21 @@ class GroupsController extends Controller
     protected function findModel($id, $view=0)
     {
         if (($model = Groups::findOne($id)) !== null) {
-            if ($view !=0) {
-                $users = Students::find()
-                    ->where(['group_id' => $id])
-                    ->count();
-                $places = $model->places - $users;
-                if ($places <= -3) {
-                    $model->places = "Группа заполнена";
-                }else {
-                    $model->places = "$places/" . $model->places;
-                }
-
-
-            }
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
+    }
+
+    protected function freePlaces($dataProvider){
+
+        foreach ($dataProvider->models as $group){
+            $students = Students::find()
+                ->where(['group_id' => $group->id])
+                ->count();
+            $group->places = $group->places - $students;
+        }
+
+        return $dataProvider;
     }
 }

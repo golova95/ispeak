@@ -47,11 +47,11 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'payment_type')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'test_mark')->textInput() ?>
-
     <?= $form->field($model, 'last_date')->textInput(['type' => 'date']) ?>
 
     <?= $form->field($model, 'comment')->textarea(['maxlength' => true, 'rows'=>2,'cols'=>5]) ?>
+
+    <?= $form->field($model, 'test_mark')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Создать' : 'Обновить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
