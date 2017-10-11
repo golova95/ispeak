@@ -43,15 +43,3 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]); ?>
 <?php Pjax::end(); ?></div>
-
-
-
-<?// var_dump($dataProvider->models); ?>
-
-
-
-<? foreach ($dataProvider->models as $group){
-
-    var_dump($group);
-    echo "<br><br>";
-} ?>
