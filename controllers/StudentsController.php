@@ -5,6 +5,7 @@ namespace app\controllers;
 use app\models\AdminUser;
 use app\models\Groups;
 use app\models\LoginForm;
+use app\models\Products;
 use app\models\Responsible;
 use Yii;
 use app\models\Students;
@@ -99,6 +100,7 @@ class StudentsController extends Controller
                 'model' => $model,
                 'groups' => $this->getGroups(),
                 'responsible' => $this->getResp(),
+                'products' => $this -> getProd(),
             ]);
         }
     }
@@ -119,6 +121,7 @@ class StudentsController extends Controller
             return $this->render('update', [
                 'groups' => $this->getGroups(),
                 'responsible' => $this->getResp(),
+                'products' => $this -> getProd(),
                 'model' => $model,
             ]);
         }
@@ -196,6 +199,17 @@ class StudentsController extends Controller
         $resp = ArrayHelper::map($resp, 'id', 'name');
 
         return $resp;
+
+    }
+
+    public function getProd(){
+
+        $prod = Products::find()
+            ->all();
+
+        $prod = ArrayHelper::map($prod, 'id', 'name');
+
+        return $prod;
 
     }
 

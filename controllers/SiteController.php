@@ -141,8 +141,12 @@ class SiteController extends Controller
             return $this->redirect('login');
         }
         $id = Yii::$app->user->identity['user_id'];
+
+        $model = $this->findModel($id);
+        $classmates = Students::getClassmates($id, $model->group_id);
         return $this->render('profile', [
-            'model' => $this->findModel($id),
+            'model' => $model,
+            'students' => $classmates,
         ]);
     }
 

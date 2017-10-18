@@ -7,6 +7,7 @@ use yii\widgets\ActiveForm;
 /* @var $model app\models\Students */
 /* @var $groups */
 /* @var $responsible */
+/* @var $products */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -30,12 +31,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'purpose')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'course_id')->dropDownList([
-        '96 ак.часов' => '96 ак.часов',
-        '192 ак.часа' => '192 ак.часа',
-        '6 месяцев' => '6 месяцев',
-        '1 год' => '1 год',
-    ]) ?>
+    <?= $form->field($model, 'course_id')->dropDownList($products) ?>
 
     <?= $form->field($model, 'test_level')->textInput(['maxlength' => true]) ?>
 

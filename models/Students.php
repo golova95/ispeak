@@ -48,7 +48,7 @@ class Students extends \yii\db\ActiveRecord
             [['name', 'email', 'purpose', 'course_id'], 'string', 'max' => 50],
             [['from', 'phone', 'test_level'], 'string', 'max' => 20],
             [['payment_type'], 'string', 'max' => 40],
-            [['comment'], 'string', 'max' => 500],
+            [['comment'], 'string', 'max' => 5000],
         ];
     }
 
@@ -79,6 +79,16 @@ class Students extends \yii\db\ActiveRecord
         ];
     }
 
+    static function getClassmates($id, $group_id)
+    {
+        $classmates = Students::find()
+            ->where(['!=', 'id', $id])
+            ->andWhere(['group_id' => $group_id])
+            ->all();
+
+        return $classmates;
+    }
+
     public function getGroup()
     {
         return $this->hasOne(Groups::className(), ['id' => 'group_id']);
@@ -102,5 +112,10 @@ class Students extends \yii\db\ActiveRecord
     public function getConfirmed()
     {
         return $this->hasOne(Responsible::className(), ['id' => 'confirmed_id']);
+    }
+
+    public function getProducts()
+    {
+        return $this->hasOne(Products::className(), ['id' => 'course_id']);
     }
 }

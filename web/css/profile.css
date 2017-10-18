@@ -130,9 +130,9 @@ body {
     font-size: 14px;
     text-align: left;
 }
-.countlist li small {
+.countlist li:not(:last-of-type) small {
     font-size: 12px;
-    margin: 0
+    margin: 0;
 }
 .followbtn {
     float: right;
@@ -381,4 +381,8 @@ body {
 .media-body {
     color: #607D8B;
     overflow: visible;
+}
+
+.teachers_phone {
+    font-size: 18px;
 }

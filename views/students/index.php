@@ -24,13 +24,16 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
 
             [
-                'attribute'=>'group',
+                'attribute'=>'Группа',
                 'value' => 'group.name',
             ],
             'name',
             'phone',
             'from',
-            'course_id',
+            [
+                'attribute'=>'Тип курса',
+                'value' => 'products.name',
+            ],
             // 'purpose',
             // 'test_level',
             // 'group_id',

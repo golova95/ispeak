@@ -44,6 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => 'Занято мест: '.sizeof($users).' из '.$model->places,
             ],
             'first',
+            'last',
             'homework',
         ],
     ]) ?>

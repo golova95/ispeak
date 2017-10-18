@@ -35,8 +35,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'label' => 'Свободных Мест:',
                 'value' => 'places',
             ],
-            'first',
-//            'last',
+//            'first',
+            'last',
             'homework',
 
             ['class' => 'yii\grid\ActionColumn'],

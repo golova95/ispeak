@@ -44,7 +44,10 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => $model->confirmed->name,
             ],
             'purpose',
-            'course_id',
+            [
+                'label' => 'Тип курса',
+                'value' => $model->products->name,
+            ],
             'test_level',
             'group.name',
             'deposit',

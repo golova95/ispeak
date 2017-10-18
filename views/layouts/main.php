@@ -75,9 +75,11 @@ if (Yii::$app->user->isGuest || Yii::$app->user->identity['user_id'] != 1 || Yii
                     <li>
                         <a href="/teachers/"><i class="fa fa-fw fa fa-pencil"></i> ПРЕПАДОВАТЕЛИ</a>
                     </li>
-
                     <li>
                         <a href="/responsible/"><i class="fa fa-fw fa fa-plus"></i> ОТВЕТСТВЕННЫЕ</a>
+                    </li>
+                    <li>
+                        <a href="/products/"><i class="fa fa-fw fa fa-leanpub"></i> ПРОДУКТЫ</a>
                     </li>
                 </ul>
             </div>

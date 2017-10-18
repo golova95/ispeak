@@ -47,7 +47,15 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'name',
             'class',
-            'date'
+            'date',
+            'level',
+            [
+                'attribute'=>'places',
+                'label' => 'Свободных Мест:',
+                'value' => 'places',
+            ],
+            'homework'
+
         ],
     ]); ?>
 

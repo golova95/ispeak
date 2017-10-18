@@ -10,7 +10,6 @@ $this->title = 'Панель Администратора';
             <h1>Welcom admin</h1>
         </div>
 
-
        <div>
            <ul class="nav navbar-nav maincontent">
                <li>

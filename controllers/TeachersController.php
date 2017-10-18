@@ -132,4 +132,17 @@ class TeachersController extends Controller
             throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
+
+//    protected function freePlaces($dataProvider){
+//
+//        foreach ($dataProvider->models as $group){
+//            $students = Students::find()
+//                ->where(['group_id' => $group->id])
+//                ->count();
+//            $group->places = $group->places - $students;
+//        }
+//
+//        return $dataProvider;
+//    }
+
 }
