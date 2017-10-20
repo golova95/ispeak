@@ -7,7 +7,7 @@ $this->title = 'Панель Администратора';
 ?>
 
         <div class="col-sm-12 col-md-12 well" id="content">
-            <h1>Welcom admin</h1>
+            <h1>Welcome admin</h1>
         </div>
 
        <div>
