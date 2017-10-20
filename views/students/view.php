@@ -33,20 +33,20 @@ $this->params['breadcrumbs'][] = $this->title;
             'from',
              [
                  'label' => 'Ответственный',
-                 'value' => $model->responsible->name,
+                 'value' => isset($model->responsible->name) ? $model->responsible->name : '',
              ],
             [
                 'label' => 'Встречу назначил',
-                'value' => $model->appointed->name,
+                'value' => isset($model->appointed->name) ? $model->appointed->name : '',
             ],
             [
                 'label' => 'Встречу подтвердил',
-                'value' => $model->confirmed->name,
+                'value' => isset($model->confirmed->name) ? $model->confirmed->name : '',
             ],
             'purpose',
             [
                 'label' => 'Тип курса',
-                'value' => $model->products->name,
+                'value' => isset($model->products->name) ? $model->products->name : '',
             ],
             'test_level',
             'group.name',

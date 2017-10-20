@@ -33,7 +33,15 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'course_id')->dropDownList($products) ?>
 
-    <?= $form->field($model, 'test_level')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'test_level')->dropDownList([
+        'Beginner' => 'Beginner',
+        'Elementary' => 'Elementary',
+        'Pre-Intermediate' => 'Pre-Intermediate',
+        'Intermediate'=>'Intermediate',
+        'Upper-Intermediate'=>'Upper-Intermediate',
+        'Advanced'=>'Advanced',
+        'Native'=>'Native',
+    ]);?>
 
     <?= $form->field($model, 'group_id')->dropDownList($groups); ?>
 

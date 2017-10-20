@@ -37,7 +37,6 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'purpose',
             // 'test_level',
             // 'group_id',
-             'deposit',
             [
                 'attribute' => 'responsible_id',
                 'value' => 'responsible.name',
@@ -45,7 +44,7 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'payments',
             // 'payment_type',
             // 'test_mark',
-            // 'last_date',
+             'last_date',
             // 'comment',
 
             ['class' => 'yii\grid\ActionColumn'],

@@ -115,22 +115,39 @@ $this->title = 'iSpeak Profile';
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h1 class="page-header small">Общая информация </h1>
+                    <h1 class="page-header small">Ссылки на материалы:</h1>
 <!--                    <p class="page-subtitle small"></p>-->
                 </div>
                 <div class="col-md-12">
                     <div class="media">
-                        <div class="media-left"> <a href="javascript:void(0)"> <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="media-object"> </a> </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Иван Петрович</h4>
-                            Занятие переноситься на пятницу, 16:20 </div>
+                            <h4 class="media-heading"><a href="https://drive.google.com/drive/folders/0B1xxnFQnwTV8WlhTOWhoUU5WRzQ" target="_blank">Beginner</a></h4>
+                        </div>
                     </div>
                     <div class="media">
-                        <div class="media-left"> <a href="javascript:void(0)">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="media-object"> </a> </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Иван Петрович</h4>
-                            Мероприятие "THE TING GO SKRRA LIRICS" или деградация пройдёт 4 октября</div>
+                            <h4 class="media-heading"><a href="https://drive.google.com/drive/folders/0B1xxnFQnwTV8eGdJRDYzelpFcFE" target="_blank">Elementary</a></h4>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="https://drive.google.com/drive/folders/0B1xxnFQnwTV8WF83X0Y3bnFZemM" target="_blank">Pre-Intermediate</a></h4>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="https://drive.google.com/drive/folders/0B1xxnFQnwTV8UG9hdTJRVkgzY1k" target="_blank">Intermediate</a></h4>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="https://drive.google.com/drive/folders/0B1xxnFQnwTV8aXp1S0dKb1NHRmc" target="_blank">Upper-Intermediate</a></h4>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="https://drive.google.com/drive/folders/0B1xxnFQnwTV8TmNSRld6bGItRUk" target="_blank">Advanced</a></h4>
+                        </div>
                     </div>
                 </div>
                 <div class="clearfix"></div>

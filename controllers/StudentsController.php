@@ -88,7 +88,7 @@ class StudentsController extends Controller
 
             $string = md5($user->username.$user->password.time());
             $email = new LoginForm();
-            if ($email->contact($model->email, $string)) {
+            if ($email->contact($model->email, $string, $user ->username)) {
 
                 return $this->redirect(['view', 'id' => $model->id]);
 

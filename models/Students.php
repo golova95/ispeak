@@ -41,7 +41,7 @@ class Students extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'email', 'phone', 'purpose', 'test_level', 'deposit', 'course_id'], 'required'],
+            [['name', 'email', 'phone', 'test_level', 'deposit', 'course_id'], 'required'],
             [['responsible_id', 'appointed_id', 'confirmed_id', 'group_id', 'payments', 'test_mark'], 'integer'],
             [['deposit'], 'number'],
             [['last_date'], 'safe'],
@@ -74,7 +74,7 @@ class Students extends \yii\db\ActiveRecord
             'payments' => 'Платежи',
             'payment_type' => 'Способ платежа',
             'test_mark' => 'Оценка при тесте',
-            'last_date' => 'Последнее занятие',
+            'last_date' => 'Дебиторка',
             'comment' => 'Комментарий',
         ];
     }
