@@ -19,7 +19,7 @@ $this->title = 'Панель Администратора';
                    <a href="/groups/create"><i class="fa fa-fw fa-group"></i> ДОБАВИТЬ ГРУППУ</a>
                </li>
                <li>
-                   <a href="/teachers/create"><i class="fa fa-fw fa fa-pencil"></i> ДОБАВИТЬ ПРЕПАДОВАТЕЛЯ</a>
+                   <a href="/teachers/create"><i class="fa fa-fw fa fa-pencil"></i> ДОБАВИТЬ ПРЕПОДАВАТЕЛЯ</a>
                </li>
 
                <li>

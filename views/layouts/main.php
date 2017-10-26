@@ -73,7 +73,7 @@ if (Yii::$app->user->isGuest || Yii::$app->user->identity['user_id'] != 1 || Yii
                         <a href="/groups/"><i class="fa fa-fw fa-group"></i> ГРУППЫ</a>
                     </li>
                     <li>
-                        <a href="/teachers/"><i class="fa fa-fw fa fa-pencil"></i> ПРЕПАДОВАТЕЛИ</a>
+                        <a href="/teachers/"><i class="fa fa-fw fa fa-pencil"></i> ПРЕПОДАВАТЕЛИ</a>
                     </li>
                     <li>
                         <a href="/responsible/"><i class="fa fa-fw fa fa-plus"></i> ОТВЕТСТВЕННЫЕ</a>

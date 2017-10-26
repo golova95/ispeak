@@ -44,9 +44,9 @@ class Teachers extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'ФИО Преподваетеля',
-            'email' => 'E-mail Преподваетеля',
-            'phone' => 'Телефон Преподваетеля',
+            'name' => 'ФИО Преподавателя',
+            'email' => 'E-mail Преподавателя',
+            'phone' => 'Телефон Преподавателя',
             'info' => 'Информация',
         ];
     }
