@@ -1,6 +1,10 @@
 <?php
 
-namespace PhpOffice\PhpWord;
+use \PhpOffice\PhpWord\TemplateProcessor;
+
+
+/* @var $this yii\web\View */
+/* @var $model app\models\Students */
 
 $array = [
     'января',
@@ -18,16 +22,15 @@ $array = [
 ];
 
 $templateProcessor = new TemplateProcessor('files/template.docx');
-$templateProcessor->setValue('student_id', 1);
+$templateProcessor->setValue('student_id', $model->id);
 
 $templateProcessor->setValue('day', date("j"));
 $templateProcessor->setValue('m', $array[(int)date("n") - 1]);
 $templateProcessor->setValue('y', date("Y"));
-$templateProcessor->setValue('name', "Головенчик Артём Сергеевич");
-$templateProcessor->setValue('data1', "mp2705000, пр. газеты правда 60 к2, квартира 111");
-$templateProcessor->setValue('type', 'групповые занятия');
-$templateProcessor->setValue('price', '420 (четыреста двадцать)');
-$templateProcessor->setValue('data2', "mp2705000, пр. газеты правда 60 к2, квартира 111");
+$templateProcessor->setValue('name', $model->name);
+$templateProcessor->setValue('data', $model->data);
+$templateProcessor->setValue('type', $model->course_type);
+$templateProcessor->setValue('price', $model->full_price);
 
 $templateProcessor -> saveAs('dogovor.docx');
 

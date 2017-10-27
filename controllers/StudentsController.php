@@ -65,6 +65,13 @@ class StudentsController extends Controller
         ]);
     }
 
+    public function actionDogovor($id)
+    {
+        return $this->render('dogovor', [
+            'model' => $this->findModel($id),
+        ]);
+    }
+
     /**
      * Creates a new Students model.
      * If creation is successful, the browser will be redirected to the 'view' page.

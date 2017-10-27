@@ -57,6 +57,13 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'test_mark')->textInput() ?>
 
+    <?= $form->field($model, 'data')->textarea(['maxlength' => true, 'rows'=>2,'cols'=>5, 'placeholder' => 'Регистрационные данные Заказчика: паспорт, дата рождения, адрес регистрации']) ?>
+
+    <?= $form->field($model, 'course_type')->textInput(['placeholder' => 'Групповые или индивидуальные']) ?>
+
+    <?= $form->field($model, 'full_price')->textInput(['placeholder' => 'цена цифрами и прописью']) ?>
+
+
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Создать' : 'Обновить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>

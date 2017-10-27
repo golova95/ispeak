@@ -49,6 +49,8 @@ class Students extends \yii\db\ActiveRecord
             [['from', 'phone', 'test_level'], 'string', 'max' => 20],
             [['payment_type'], 'string', 'max' => 40],
             [['comment'], 'string', 'max' => 5000],
+            [['data'], 'string', 'max' => 500],
+            [['course_type', 'full_price'], 'string', 'max' => 200],
         ];
     }
 
@@ -76,6 +78,9 @@ class Students extends \yii\db\ActiveRecord
             'test_mark' => 'Оценка при тесте',
             'last_date' => 'Дебиторка',
             'comment' => 'Комментарий',
+            'data' => 'Регистрационные данные',
+            'course_type' => 'Тип занятий',
+            'full_price' => 'Стоимость курса',
         ];
     }
 

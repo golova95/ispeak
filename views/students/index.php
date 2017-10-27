@@ -46,8 +46,29 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'test_mark',
              'last_date',
             // 'comment',
+            [
+
+                'label'=>'Договор',
+                'contentOptions' => ['class' => 'text-center'],
+                'format' => 'raw',
+                'value'=>function ($data) {
+                    return Html::a(Html::encode(""), ['dogovor', 'id' => $data->id], ['class' => 'glyphicon glyphicon-print']);
+                },
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 <?php Pjax::end(); ?></div>
+
+
+<?php
+//foreach ($dataProvider->models as $data){
+//
+//    foreach ($data as $array) {
+//        var_dump($array);
+//        echo "<br><br>";
+//    }
+//}
+//
+//?>
