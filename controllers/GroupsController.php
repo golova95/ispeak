@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\models\StudentsSearch;
 use app\models\Teachers;
+use app\models\Timetable;
 use Yii;
 use app\models\Groups;
 use app\models\Students;
@@ -12,6 +13,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\helpers\ArrayHelper;
+use yii\helpers\Json;
 
 /**
  * GroupsController implements the CRUD actions for Groups model.
@@ -83,7 +85,6 @@ class GroupsController extends Controller
 
         $teachers = ArrayHelper::map($teachers, 'id', 'name');
 
-
         $model = new Groups();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -95,6 +96,37 @@ class GroupsController extends Controller
             ]);
         }
     }
+
+
+
+    public function actionDate() {
+
+        if (isset($_POST['depdrop_parents'])) {
+            $parents = $_POST['depdrop_parents'];
+            if ($parents != null) {
+                $class = $parents[0];
+                $first = $parents[1];
+
+                $time = self::dateTime($class, $first);
+
+//                $out = self::getSubCatList($cat_id);
+                // the getSubCatList function will query the database based on the
+                // cat_id and return an array like below:
+                // [
+                //    ['id'=>'<sub-cat-id-1>', 'name'=>'<sub-cat-name1>'],
+                //    ['id'=>'<sub-cat_id_2>', 'name'=>'<sub-cat-name2>']
+                // ]
+                echo Json::encode(['output'=>$time, 'selected'=>'']);
+                return;
+            }
+        }
+        echo Json::encode(['output'=>'', 'selected'=>'']);
+
+    }
+
+
+
+
 
     /**
      * Updates an existing Groups model.
@@ -160,5 +192,30 @@ class GroupsController extends Controller
         }
 
         return $dataProvider;
+    }
+
+    protected function dateTime($class ,$first)
+    {
+        $time = Timetable::find()
+            ->asArray()
+            ->all();
+
+        $badtime = Groups::find()
+            ->select('date')
+            ->where(['class' => $class])
+            ->andWhere(['>', 'last', $first])
+            ->asArray()
+            ->all();
+
+        foreach ($time as $key=>$value){
+            foreach ($badtime as $bad){
+                if (mb_strtolower(str_replace(' ', '', $value['name'])) == mb_strtolower(str_replace(' ', '', $bad['date'])))
+                {
+                    unset($time[$key]);
+                }
+            }
+        }
+
+        return $time;
     }
 }

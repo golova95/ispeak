@@ -81,6 +81,9 @@ if (Yii::$app->user->isGuest || Yii::$app->user->identity['user_id'] != 1 || Yii
                     <li>
                         <a href="/products/"><i class="fa fa-fw fa fa-leanpub"></i> ПРОДУКТЫ</a>
                     </li>
+                    <li>
+                        <a href="/timetable/"><i class="fa fa-fw fa-calendar"></i>  РАСПИСАНИЕ</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

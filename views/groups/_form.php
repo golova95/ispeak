@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\Url;
+use kartik\widgets\DepDrop;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Groups */
@@ -28,9 +30,20 @@ use yii\widgets\ActiveForm;
         '3-3' => '3-3',
         '3-4' => '3-4',
         '3-5' => '3-5',
-    ]); ?>
+    ], ['id'=>'class-id']); ?>
 
-    <?= $form->field($model, 'date')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'first')->textInput(['type' => 'date', 'id'=>'first-id']) ?>
+
+<!--    --><?//= $form->field($model, 'date')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'date')->widget(DepDrop::classname(), [
+        'options' => ['id'=>'time-id'],
+        'pluginOptions'=>[
+            'depends'=>['class-id', 'first-id' ],
+            'placeholder'=>'Select...',
+            'url'=>Url::to(['date'])
+        ]
+    ]); ?>
 
     <?= $form->field($model, 'level')->dropDownList([
         'Beginner' => 'Beginner',
@@ -43,8 +56,6 @@ use yii\widgets\ActiveForm;
     ]); ?>
 
     <?= $form->field($model, 'places')->textInput() ?>
-
-    <?= $form->field($model, 'first')->textInput(['type' => 'date']) ?>
 
     <?= $form->field($model, 'last')->textInput(['type' => 'date']) ?>
 

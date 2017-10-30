@@ -68,6 +68,11 @@ class Groups extends \yii\db\ActiveRecord
         return $this->hasMany(Students::className(), ['group_id' => 'id']);
     }
 
+    public function getTimetable()
+    {
+        return $this->hasOne(Timetable::className(), ['id' => 'date']);
+    }
+
     public function getTeachers()
     {
         return $this->hasOne(Teachers::className(), ['id' => 'prof']);

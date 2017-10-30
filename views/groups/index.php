@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => 'teachers.name',
             ],
             'class',
-            'date',
+            'timetable.name',
             'level',
             [
                 'attribute'=>'places',
