@@ -8,7 +8,8 @@ use Yii;
  * This is the model class for table "timetable".
  *
  * @property integer $id
- * @property string $name
+ * @property string $days
+ *  * @property string $time
  */
 class Timetable extends \yii\db\ActiveRecord
 {
@@ -26,8 +27,9 @@ class Timetable extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name'], 'required'],
-            [['name'], 'string', 'max' => 200],
+            [['days', 'time'], 'required'],
+            [['days'], 'string', 'max' => 200],
+            [['time'], 'string', 'max' => 20],
         ];
     }
 
@@ -38,7 +40,14 @@ class Timetable extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Дни/Время',
+            'days' => 'Дни',
+            'time' => 'Время'
+
         ];
+    }
+
+    public function getGroups()
+    {
+        return $this->hasMany(Groups::className(), ['date' => 'id']);
     }
 }

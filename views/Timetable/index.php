@@ -22,10 +22,19 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
-            'name',
-
+            'days',
+            'time',
+            [
+                'attribute'=>'Аудитория',
+                'value'=>function($model){
+                    $res='';
+                    foreach ( $model->groups as $group ){
+                        $res .= Html::tag('div',$group->class);
+                    }
+                    return $res;
+                },
+                'format'=>'raw'
+            ],
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

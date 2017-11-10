@@ -87,6 +87,7 @@ if (Yii::$app->user->isGuest || Yii::$app->user->identity['user_id'] != 1 || Yii
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
+
         </nav>
 
         <div id="page-wrapper">

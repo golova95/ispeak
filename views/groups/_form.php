@@ -34,8 +34,6 @@ use kartik\widgets\DepDrop;
 
     <?= $form->field($model, 'first')->textInput(['type' => 'date', 'id'=>'first-id']) ?>
 
-<!--    --><?//= $form->field($model, 'date')->textInput(['maxlength' => true]) ?>
-
     <?= $form->field($model, 'date')->widget(DepDrop::classname(), [
         'options' => ['id'=>'time-id'],
         'pluginOptions'=>[

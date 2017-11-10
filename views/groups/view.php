@@ -37,7 +37,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'name',
             'teachers.name',
             'class',
-            'timetable.name',
+            'timetable.days',
+            'timetable.time',
             'level',
             [
                 'attribute'=>'places',

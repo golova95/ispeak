@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\Pjax;
 /* @var $this yii\web\View */
+/* @var $teachers */
 /* @var $searchModel app\models\GroupsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
@@ -13,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="groups-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-<!--    --><?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <?php  echo $this->render('_search', ['model' => $searchModel, 'teachers' => $teachers,]); ?>
 
     <p>
         <?= Html::a('Добавить группу', ['create'], ['class' => 'btn btn-success']) ?>
@@ -28,7 +29,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'value' => 'teachers.name',
             ],
             'class',
-            'timetable.name',
+            'timetable.days',
+            'timetable.time',
             'level',
             [
                 'attribute'=>'places',

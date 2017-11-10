@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
+/* @var $teachers */
 /* @var $model app\models\GroupsSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
@@ -15,27 +16,36 @@ use yii\widgets\ActiveForm;
         'method' => 'get',
     ]); ?>
 
-    <?= $form->field($model, 'id') ?>
+    <?= $form->field($model, 'class')->dropDownList([
+            ''=>'',
+        '2-1' => '2-1',
+        '2-2' => '2-2',
+        '2-3' => '2-3',
+        '2-4' => '2-4',
+        '2-5' => '2-5',
+        '3-1' => '3-1',
+        '3-2' => '3-2',
+        '3-3' => '3-3',
+        '3-4' => '3-4',
+        '3-5' => '3-5',
+    ]);?>
 
-    <?= $form->field($model, 'prof') ?>
+<!--    --><?//= $form->field($model, 'date') ?>
 
-    <?= $form->field($model, 'class') ?>
-
-    <?= $form->field($model, 'date') ?>
-
-    <?= $form->field($model, 'level') ?>
-
-    <?php // echo $form->field($model, 'places') ?>
-
-    <?php // echo $form->field($model, 'first') ?>
-
-    <?php // echo $form->field($model, 'last') ?>
-
-    <?php // echo $form->field($model, 'homework') ?>
+    <?= $form->field($model, 'level')->dropDownList([
+            ''=>'',
+        'Beginner' => 'Beginner',
+        'Elementary' => 'Elementary',
+        'Pre-Intermediate' => 'Pre-Intermediate',
+        'Intermediate'=>'Intermediate',
+        'Upper-Intermediate'=>'Upper-Intermediate',
+        'Advanced'=>'Advanced',
+        'Native'=>'Native',
+    ]); ?>
 
     <div class="form-group">
         <?= Html::submitButton('Поиск', ['class' => 'btn btn-primary']) ?>
-        <?= Html::resetButton('Сбросить', ['class' => 'btn btn-default']) ?>
+        <?= Html::a('Сбросить', ['index'], ['class' => 'btn btn-default']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

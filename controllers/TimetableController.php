@@ -65,8 +65,34 @@ class TimetableController extends Controller
     {
         $model = new Timetable();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if(Yii::$app->request->post()){
+            if (Yii::$app->request->post('time') && (Yii::$app->request->post('ПН') || Yii::$app->request->post('ВТ') || Yii::$app->request->post('СР') || Yii::$app->request->post('ЧТ') || Yii::$app->request->post('ПТ'))) {
+
+                $post = Yii::$app->request->post();
+                $days ='';
+
+
+                foreach ($post as $key=>$value){
+                    if ($value === '1')
+                    {
+                        $days.=$key.',';
+                    }
+                }
+                $days = substr($days, 0, -1);
+
+
+
+                $model -> time = Yii::$app->request->post('time');
+                $model -> days = $days;
+
+                if ($model->save()){
+                    return $this->redirect(['view', 'id' => $model->id]);
+                }
+            }else{
+                return $this->render('create', [
+                    'model' => $model,
+                ]);
+            }
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -84,13 +110,49 @@ class TimetableController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+
+
+        if(Yii::$app->request->post()){
+            if (Yii::$app->request->post('time') && (Yii::$app->request->post('ПН') || Yii::$app->request->post('ВТ') || Yii::$app->request->post('СР') || Yii::$app->request->post('ЧТ') || Yii::$app->request->post('ПТ'))) {
+
+                $post = Yii::$app->request->post();
+                $days ='';
+
+
+                foreach ($post as $key=>$value){
+                    if ($value === '1')
+                    {
+                        $days.=$key.',';
+                    }
+                }
+                $days = substr($days, 0, -1);
+
+
+
+                $model -> time = Yii::$app->request->post('time');
+                $model -> days = $days;
+
+                if ($model->save()){
+                    return $this->redirect(['view', 'id' => $model->id]);
+                }
+            }else{
+                return $this->render('update', [
+                    'model' => $model,
+                    'time' => Yii::$app->request->post('time'),
+                ]);
+            }
         } else {
             return $this->render('update', [
                 'model' => $model,
             ]);
         }
+//        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+//            return $this->redirect(['view', 'id' => $model->id]);
+//        } else {
+//            return $this->render('update', [
+//                'model' => $model,
+//            ]);
+//        }
     }
 
     /**

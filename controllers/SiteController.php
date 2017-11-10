@@ -23,8 +23,6 @@ class SiteController extends Controller
      */
 
 
-
-
     public function behaviors()
     {
         return [
@@ -153,11 +151,18 @@ class SiteController extends Controller
 
     public function actionTest()
     {
-        $template = Yii::$app->templateManager->getTemplate('passworddrop', 'ru');
+        if (Yii::$app->request->isPost){
+            return $this->render('test', [
+                'model' => Yii::$app->request,
+            ]);
+        }
 
+        $model = $this->findModel(18);
         return $this->render('test', [
-            'template' => $template,
+            'model' => $model,
         ]);
+
+
     }
 
     public function actionConfirm()

@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Timetable */
 
-$this->title = $model->name;
+//$this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Timetables', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -28,7 +28,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'name',
+            'days',
+            'time',
         ],
     ]) ?>
 

@@ -18,8 +18,8 @@ class StudentsSearch extends Students
     public function rules()
     {
         return [
-            [['id', 'responsible_id', 'appointed_id', 'confirmed_id', 'group_id', 'payments', 'test_mark', 'last_date'], 'integer'],
-            [['name', 'from', 'purpose', 'test_level', 'payment_type', 'comment'], 'safe'],
+            [['id', 'appointed_id', 'confirmed_id', 'payments', 'test_mark'], 'integer'],
+            [['name', 'phone', 'purpose', 'test_level', 'payment_type', 'comment'], 'safe'],
             [['deposit'], 'number'],
         ];
     }
@@ -61,6 +61,7 @@ class StudentsSearch extends Students
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
+            'phone' => $this->phone,
             'responsible_id' => $this->responsible_id,
             'appointed_id' => $this->appointed_id,
             'confirmed_id' => $this->confirmed_id,
@@ -71,8 +72,9 @@ class StudentsSearch extends Students
             'last_date' => $this->last_date,
         ]);
 
-        $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'from', $this->from])
+        $query->andFilterWhere(['like', 'phone', $this->phone])
+            ->andFilterWhere(['like', 'name', $this->name])
+//            ->andFilterWhere(['like', 'from', $this->from])
             ->andFilterWhere(['like', 'purpose', $this->purpose])
             ->andFilterWhere(['like', 'test_level', $this->test_level])
             ->andFilterWhere(['like', 'payment_type', $this->payment_type])
@@ -105,6 +107,7 @@ class StudentsSearch extends Students
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
+            'phone' => $this->phone,
             'responsible_id' => $this->responsible_id,
             'appointed_id' => $this->appointed_id,
             'confirmed_id' => $this->confirmed_id,
@@ -116,7 +119,8 @@ class StudentsSearch extends Students
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'from', $this->from])
+//            ->andFilterWhere(['like', 'from', $this->from])
+            ->andFilterWhere(['like', 'phone', $this->phone])
             ->andFilterWhere(['like', 'purpose', $this->purpose])
             ->andFilterWhere(['like', 'test_level', $this->test_level])
             ->andFilterWhere(['like', 'payment_type', $this->payment_type])

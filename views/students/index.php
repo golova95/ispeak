@@ -13,22 +13,34 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="students-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+<!--    --><?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
         <?= Html::a('Добавить Студента', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Сбосить фильтр', ['index'], ['class' => 'btn btn-danger']) ?>
     </p>
 <?php Pjax::begin(); ?>    <?= GridView::widget([
         'dataProvider' => $dataProvider,
-//        'filterModel' => $searchModel,
+        'filterModel' => $searchModel,
         'columns' => [
 
             [
-                'attribute'=>'Группа',
+                'attribute'=>'group_id',
                 'value' => 'group.name',
             ],
-            'name',
-            'phone',
+            [
+                'attribute'=>'name',
+                'label' => 'Имя',
+                'format' => 'raw',
+                'value' => function ($data) {
+                    return Html::a($data->name, ['/students/view', 'id' => $data->id]);
+                },
+            ],
+            [
+                'attribute'=>'phone',
+                'format' => 'raw',
+                'value' => 'phone',
+            ],
             'from',
             [
                 'attribute'=>'Тип курса',
@@ -49,7 +61,7 @@ $this->params['breadcrumbs'][] = $this->title;
             [
 
                 'label'=>'Договор',
-                'contentOptions' => ['class' => 'text-center'],
+                'contentOptions' => ['class' => 'text-center h3'],
                 'format' => 'raw',
                 'value'=>function ($data) {
                     return Html::a(Html::encode(""), ['dogovor', 'id' => $data->id], ['class' => 'glyphicon glyphicon-print']);

@@ -19,7 +19,7 @@ class TimetableSearch extends Timetable
     {
         return [
             [['id'], 'integer'],
-            [['name'], 'safe'],
+            [['days', 'time'], 'safe'],
         ];
     }
 
@@ -62,7 +62,8 @@ class TimetableSearch extends Timetable
             'id' => $this->id,
         ]);
 
-        $query->andFilterWhere(['like', 'name', $this->name]);
+        $query->andFilterWhere(['like', 'days', $this->days])
+            ->andFilterWhere(['like', 'time', $this->time]);
 
         return $dataProvider;
     }

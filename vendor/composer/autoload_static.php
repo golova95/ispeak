@@ -50,6 +50,7 @@ class ComposerStaticInitc22a6a76a7e576c519fe0104bbd8dbd7
             'kartik\\range\\' => 13,
             'kartik\\plugins\\fileinput\\' => 25,
             'kartik\\plugins\\depdrop\\' => 23,
+            'kartik\\plugins\\checkbox\\' => 24,
             'kartik\\growl\\' => 13,
             'kartik\\form\\' => 12,
             'kartik\\file\\' => 12,
@@ -57,6 +58,7 @@ class ComposerStaticInitc22a6a76a7e576c519fe0104bbd8dbd7
             'kartik\\datetime\\' => 16,
             'kartik\\date\\' => 12,
             'kartik\\color\\' => 13,
+            'kartik\\checkbox\\' => 16,
             'kartik\\base\\' => 12,
             'kartik\\alert\\' => 13,
             'kartik\\affix\\' => 13,
@@ -214,6 +216,10 @@ class ComposerStaticInitc22a6a76a7e576c519fe0104bbd8dbd7
         array (
             0 => __DIR__ . '/..' . '/kartik-v/dependent-dropdown',
         ),
+        'kartik\\plugins\\checkbox\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/bootstrap-checkbox-x',
+        ),
         'kartik\\growl\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-growl',
@@ -241,6 +247,10 @@ class ComposerStaticInitc22a6a76a7e576c519fe0104bbd8dbd7
         'kartik\\color\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-colorinput',
+        ),
+        'kartik\\checkbox\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-checkbox-x',
         ),
         'kartik\\base\\' => 
         array (

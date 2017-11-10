@@ -44,9 +44,16 @@ class GroupsController extends Controller
         $searchModel = new GroupsSearch();
         $dataProvider = $this->freePlaces($searchModel->search(Yii::$app->request->queryParams));
 
+        $teachers = Teachers::find()
+            ->all();
+
+        $teachers = ArrayHelper::map($teachers, 'id', 'name');
+
+
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'teachers' => $teachers,
         ]);
     }
 
@@ -109,6 +116,12 @@ class GroupsController extends Controller
 
                 $time = self::dateTime($class, $first);
 
+                $a = [];
+                foreach ($time as $t){
+                    $a[]=['id' => $t['id'], 'name' => $t['days'].' '.$t['time']];
+
+                }
+
 //                $out = self::getSubCatList($cat_id);
                 // the getSubCatList function will query the database based on the
                 // cat_id and return an array like below:
@@ -116,7 +129,7 @@ class GroupsController extends Controller
                 //    ['id'=>'<sub-cat-id-1>', 'name'=>'<sub-cat-name1>'],
                 //    ['id'=>'<sub-cat_id_2>', 'name'=>'<sub-cat-name2>']
                 // ]
-                echo Json::encode(['output'=>$time, 'selected'=>'']);
+                echo Json::encode(['output'=>$a, 'selected'=>'']);
                 return;
             }
         }
@@ -209,7 +222,7 @@ class GroupsController extends Controller
 
         foreach ($time as $key=>$value){
             foreach ($badtime as $bad){
-                if (mb_strtolower(str_replace(' ', '', $value['name'])) == mb_strtolower(str_replace(' ', '', $bad['date'])))
+                if ($bad['date'] == $value['id'])
                 {
                     unset($time[$key]);
                 }

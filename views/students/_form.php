@@ -51,17 +51,18 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'payment_type')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'full_price')->textInput(['placeholder' => 'цена цифрами и прописью']) ?>
+
     <?= $form->field($model, 'last_date')->textInput(['type' => 'date']) ?>
 
-    <?= $form->field($model, 'comment')->textarea(['maxlength' => true, 'rows'=>2,'cols'=>5]) ?>
+    <?= $form->field($model, 'comment')->textarea(['maxlength' => true, 'rows'=>6,'cols'=>5]) ?>
 
     <?= $form->field($model, 'test_mark')->textInput() ?>
 
-    <?= $form->field($model, 'data')->textarea(['maxlength' => true, 'rows'=>2,'cols'=>5, 'placeholder' => 'Регистрационные данные Заказчика: паспорт, дата рождения, адрес регистрации']) ?>
+    <?= $form->field($model, 'data')->textarea(['maxlength' => true, 'rows'=>4,'cols'=>5, 'placeholder' => 'Регистрационные данные Заказчика: паспорт, дата рождения, адрес регистрации']) ?>
 
     <?= $form->field($model, 'course_type')->textInput(['placeholder' => 'Групповые или индивидуальные']) ?>
 
-    <?= $form->field($model, 'full_price')->textInput(['placeholder' => 'цена цифрами и прописью']) ?>
 
 
     <div class="form-group">
